@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="ProxiSpeak is a geospatial proximity audio ecosystem for discovering and sharing location-based audio stories."
+    >
+
+    <title>ProxiSpeak | Discover Audio Around You</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">
+                Proxi<span>Speak</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#location-section">My Location</a></li>
+                <li><a href="#audio-section">Audio Stories</a></li>
+            </ul>
+
+            <a href="#audio-section" class="btn">
+                Explore Now
+            </a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+                <p>🎧 YOUR WORLD, YOUR STORIES</p>
+
+                <h1>
+                    Discover Audio
+                    <span>Around You</span>
+                </h1>
+
+                <p>
+                    Explore sounds, stories and experiences connected
+                    to real places. Discover your surroundings through
+                    the power of location-based audio.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#audio-section" class="btn">
+                        Explore Stories
+                    </a>
+
+                    <a href="#location-section" class="btn btn-outline">
+                        Find My Location
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="hero-icon">📍🎧</div>
+
+                    <h3>Listen to Your World</h3>
+
+                    <p>
+                        Discover audio experiences associated
+                        with places around you.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Features Section -->
+        <section id="features">
+
+            <div class="section-heading">
+                <h2>Explore ProxiSpeak</h2>
+
+                <p>
+                    Experience your surroundings in a new way
+                    through location-based audio.
+                </p>
+            </div>
+
+            <div class="features-grid">
+
+                <article class="feature-card">
+                    <div class="feature-icon">📍</div>
+
+                    <h3>Location Discovery</h3>
+
+                    <p>
+                        Check your current location using your
+                        device's location permission.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🎙️</div>
+
+                    <h3>Audio Stories</h3>
+
+                    <p>
+                        Explore audio stories and information
+                        associated with different places.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🌍</div>
+
+                    <h3>Explore Places</h3>
+
+                    <p>
+                        Imagine a world where every place can
+                        share its own story through sound.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location-section" id="location-section">
+
+            <div class="section-heading">
+                <h2>Find Your Location</h2>
+
+                <p>
+                    Allow location access to check your current
+                    geographical coordinates.
+                </p>
+            </div>
+
+            <div class="location-panel">
+
+                <h3>📍 Your Current Location</h3>
+
+                <p>
+                    Click the button below to request your
+                    device's location.
+                </p>
+
+                <button
+                    type="button"
+                    id="find-location"
+                    class="btn"
+                >
+                    Find My Location
+                </button>
+
+                <p
+                    id="location-status"
+                    class="location-status"
+                    role="status"
+                    aria-live="polite"
+                >
+                    Your location has not been checked yet.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Audio Stories Section -->
+        <section id="audio-section">
+
+            <div class="section-heading">
+                <h2>Discover Audio Stories</h2>
+
+                <p>
+                    Search and explore the sample audio posts
+                    available in ProxiSpeak.
+                </p>
+            </div>
+
+            <div class="search-box">
+
+                <input
+                    type="search"
+                    id="audio-search"
+                    placeholder="Search stories, places or categories..."
+                    aria-label="Search audio stories"
+                >
+
+                <button
+                    type="button"
+                    id="search-button"
+                    class="btn"
+                >
+                    Search
+                </button>
+
+            </div>
+
+            <!-- JavaScript displays audio cards here -->
+            <div
+                id="audio-list"
+                class="audio-grid"
+                aria-live="polite"
+            >
+            </div>
+
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+
+            <div class="section-heading">
+                <h2>About ProxiSpeak</h2>
+
+                <p>
+                    ProxiSpeak stands for
+                    <strong>Geospatial Proximity Audio Ecosystem</strong>.
+                    The project aims to connect places, people and
+                    audio experiences through location-aware technology.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © <span id="current-year">2026</span> ProxiSpeak.
+            All rights reserved.
+        </p>
+
+        <p>
+            Discover your world. Listen to your surroundings.
+        </p>
+    </footer>
+
+    <!-- Connect JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
